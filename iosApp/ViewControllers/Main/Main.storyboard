@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="4J4-wz-K5o">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="AZ3-0F-CAG" customClass="MainViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EUc-4c-1uC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6i-EY-K86">
+                                <rect key="frame" x="20" y="64" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bBu-MW-iDg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="PAYMENT RECEIVED"/>
+                                <connections>
+                                    <action selector="onPaymentRestoreClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="v0R-Wl-OZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-oL-12X">
+                                <rect key="frame" x="20" y="144" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1q2-3X-rqi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="REMOVE SAVED CARD"/>
+                                <connections>
+                                    <action selector="onCardRemoveClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="8DN-26-seS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34X-Dx-XkQ">
+                                <rect key="frame" x="20" y="224" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YNg-3l-dDA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="NEW CARD SALE/AUTH/TOKENIZE/VERIFY"/>
+                                <connections>
+                                    <action selector="onCardSaleClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="jzy-BG-K05"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXr-SK-cOa">
+                                <rect key="frame" x="20" y="304" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Cux-x1-Fna"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="SAVED CARD SALE/AUTH"/>
+                                <connections>
+                                    <action selector="onSavedCardSaleClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="KbM-R6-EGp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdn-QR-lyK">
+                                <rect key="frame" x="20" y="384" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GSV-zf-CEI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="APPLE PAY SALE/AUTH"/>
+                                <connections>
+                                    <action selector="onApplePayClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="pEw-Uc-gLn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qIB-HG-dIr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rpk-oL-12X" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="0p7-jN-64m"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="vdn-QR-lyK" secondAttribute="trailing" constant="20" id="0xN-p5-W09"/>
+                            <constraint firstItem="wXr-SK-cOa" firstAttribute="top" secondItem="34X-Dx-XkQ" secondAttribute="bottom" constant="20" id="1db-EE-Isq"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="34X-Dx-XkQ" secondAttribute="trailing" constant="20" id="3gM-ko-b93"/>
+                            <constraint firstItem="vdn-QR-lyK" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="HyA-il-g3J"/>
+                            <constraint firstItem="B6i-EY-K86" firstAttribute="top" secondItem="qIB-HG-dIr" secondAttribute="top" constant="20" id="R55-dN-i1Z"/>
+                            <constraint firstItem="wXr-SK-cOa" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="TDx-Dv-fpt"/>
+                            <constraint firstItem="vdn-QR-lyK" firstAttribute="top" secondItem="wXr-SK-cOa" secondAttribute="bottom" constant="20" id="WXQ-Fc-Fq3"/>
+                            <constraint firstItem="B6i-EY-K86" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="XAn-6z-UH7"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="wXr-SK-cOa" secondAttribute="trailing" constant="20" id="dZE-bL-Xmo"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="rpk-oL-12X" secondAttribute="trailing" constant="20" id="g7K-jY-9al"/>
+                            <constraint firstItem="34X-Dx-XkQ" firstAttribute="top" secondItem="rpk-oL-12X" secondAttribute="bottom" constant="20" id="nVv-RW-NAK"/>
+                            <constraint firstItem="rpk-oL-12X" firstAttribute="top" secondItem="B6i-EY-K86" secondAttribute="bottom" constant="20" id="qs9-OR-yKd"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="B6i-EY-K86" secondAttribute="trailing" constant="20" id="raz-E2-8zI"/>
+                            <constraint firstItem="34X-Dx-XkQ" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="rcy-DE-r54"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applePayButton" destination="vdn-QR-lyK" id="abm-0e-bqg"/>
+                        <outlet property="newCardButton" destination="34X-Dx-XkQ" id="UPO-e0-4EJ"/>
+                        <outlet property="paymentReceivedButton" destination="B6i-EY-K86" id="rlR-kU-POu"/>
+                        <outlet property="removeSavedCardButton" destination="rpk-oL-12X" id="XEO-Il-7b0"/>
+                        <outlet property="savedCardButton" destination="wXr-SK-cOa" id="T0O-Du-7sj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZj-iy-of1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="-449"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

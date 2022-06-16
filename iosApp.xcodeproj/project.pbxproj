@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1132AE40D51237AE67C4BED8 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF51A64CC272AB611962CE9 /* Pods_iosApp.framework */; };
+		DC4593B92859DCC70022CA4D /* AcsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4593B82859DCC70022CA4D /* AcsViewController.swift */; };
+		DC4593BB2859DDF60022CA4D /* Acs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4593BA2859DDF60022CA4D /* Acs.storyboard */; };
+		DC4593BD2859DEC10022CA4D /* AcsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4593BC2859DEC10022CA4D /* AcsCoordinator.swift */; };
+		DC4593C1285A0B530022CA4D /* ApplePayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4593C0285A0B530022CA4D /* ApplePayCoordinator.swift */; };
+		DC4593C3285A0CE60022CA4D /* ApplePay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4593C2285A0CE60022CA4D /* ApplePay.storyboard */; };
+		DC4593C5285A1B740022CA4D /* RemoveSavedCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4593C4285A1B740022CA4D /* RemoveSavedCardViewController.storyboard */; };
+		DC4593C7285A1BB00022CA4D /* RemoveSavedCardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4593C6285A1BB00022CA4D /* RemoveSavedCardCoordinator.swift */; };
+		DC4593CB285B2D800022CA4D /* RestorePaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4593CA285B2D800022CA4D /* RestorePaymentViewController.swift */; };
+		DC4593CD285B39770022CA4D /* RestorePayment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4593CC285B39770022CA4D /* RestorePayment.storyboard */; };
+		DC4593CF285B3CC40022CA4D /* RestorePaymentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4593CE285B3CC40022CA4D /* RestorePaymentCoordinator.swift */; };
+		DC5353F72823EFF300D0036C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5353F62823EFF300D0036C /* AppDelegate.swift */; };
+		DC5353FB2823EFF300D0036C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5353FA2823EFF300D0036C /* MainViewController.swift */; };
+		DC5354002823EFF400D0036C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5353FF2823EFF400D0036C /* Assets.xcassets */; };
+		DC5354032823EFF400D0036C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5354012823EFF400D0036C /* LaunchScreen.storyboard */; };
+		DC53540E2823EFF400D0036C /* iosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53540D2823EFF400D0036C /* iosAppTests.swift */; };
+		DC5354182823EFF400D0036C /* iosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354172823EFF400D0036C /* iosAppUITests.swift */; };
+		DC53541A2823EFF400D0036C /* iosAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354192823EFF400D0036C /* iosAppUITestsLaunchTests.swift */; };
+		DC5354282823F33000D0036C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354272823F33000D0036C /* Utils.swift */; };
+		DC53542C282401EA00D0036C /* RemoveSavedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53542B282401EA00D0036C /* RemoveSavedCardViewController.swift */; };
+		DC535430282405CA00D0036C /* CardSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53542F282405CA00D0036C /* CardSaleViewController.swift */; };
+		DC5354322824091800D0036C /* SavedCardSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354312824091800D0036C /* SavedCardSaleViewController.swift */; };
+		DC6A6E292858D0D4000986C5 /* ClarificationFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A6E282858D0D4000986C5 /* ClarificationFieldTableViewCell.swift */; };
+		DC6A6E2B2858D10E000986C5 /* ClarificationFieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A6E2A2858D10E000986C5 /* ClarificationFieldsTableViewController.swift */; };
+		DC6A6E2D2858D1C8000986C5 /* ClarificationFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6A6E2C2858D1C8000986C5 /* ClarificationFields.storyboard */; };
+		DC6A6E2F2858D214000986C5 /* ClarificationFieldsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A6E2E2858D214000986C5 /* ClarificationFieldsCoordinator.swift */; };
+		DCA01642283F76F600580D22 /* ApplePaySaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA01641283F76F600580D22 /* ApplePaySaleViewController.swift */; };
+		DCDDDE002858AD2F005140F8 /* PayBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDDFF2858AD2F005140F8 /* PayBaseViewController.swift */; };
+		DCDDDE032858AF62005140F8 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE022858AF62005140F8 /* BaseCoordinator.swift */; };
+		DCDDDE052858AFA9005140F8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE042858AFA9005140F8 /* AppCoordinator.swift */; };
+		DCDDDE082858B03E005140F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDDDE072858B03E005140F8 /* Main.storyboard */; };
+		DCDDDE0B2858B153005140F8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE0A2858B153005140F8 /* BaseNavigationController.swift */; };
+		DCDDDE0D2858B1F4005140F8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE0C2858B1F4005140F8 /* R.generated.swift */; };
+		DCDDDE112858B4C8005140F8 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE102858B4C8005140F8 /* ViewControllerUtils.swift */; };
+		DCDDDE132858B58C005140F8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE122858B58C005140F8 /* MainCoordinator.swift */; };
+		DCDDDE152858B738005140F8 /* CardSale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDDDE142858B738005140F8 /* CardSale.storyboard */; };
+		DCDDDE172858B7A5005140F8 /* CardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE162858B7A5005140F8 /* CardCoordinator.swift */; };
+		DCDDDE192858B975005140F8 /* CustomerFieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE182858B975005140F8 /* CustomerFieldsTableViewController.swift */; };
+		DCDDDE1B2858B97E005140F8 /* CustomerFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDDDE1A2858B97E005140F8 /* CustomerFields.storyboard */; };
+		DCDDDE1D2858B9AC005140F8 /* CustomerFieldsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE1C2858B9AC005140F8 /* CustomerFieldsCoordinator.swift */; };
+		DCDDDE1F2858BD1D005140F8 /* CustomerFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE1E2858BD1D005140F8 /* CustomerFieldTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC53540A2823EFF400D0036C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5353EB2823EFF300D0036C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5353F22823EFF300D0036C;
+			remoteInfo = iosApp;
+		};
+		DC5354142823EFF400D0036C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5353EB2823EFF300D0036C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5353F22823EFF300D0036C;
+			remoteInfo = iosApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B14BF70D02FFDB89DD8E279 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
+		6F6C6DF0549B99E54568092F /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF51A64CC272AB611962CE9 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4593B82859DCC70022CA4D /* AcsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcsViewController.swift; sourceTree = "<group>"; };
+		DC4593BA2859DDF60022CA4D /* Acs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Acs.storyboard; sourceTree = "<group>"; };
+		DC4593BC2859DEC10022CA4D /* AcsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcsCoordinator.swift; sourceTree = "<group>"; };
+		DC4593C0285A0B530022CA4D /* ApplePayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayCoordinator.swift; sourceTree = "<group>"; };
+		DC4593C2285A0CE60022CA4D /* ApplePay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplePay.storyboard; sourceTree = "<group>"; };
+		DC4593C4285A1B740022CA4D /* RemoveSavedCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RemoveSavedCardViewController.storyboard; sourceTree = "<group>"; };
+		DC4593C6285A1BB00022CA4D /* RemoveSavedCardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveSavedCardCoordinator.swift; sourceTree = "<group>"; };
+		DC4593CA285B2D800022CA4D /* RestorePaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePaymentViewController.swift; sourceTree = "<group>"; };
+		DC4593CC285B39770022CA4D /* RestorePayment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestorePayment.storyboard; sourceTree = "<group>"; };
+		DC4593CE285B3CC40022CA4D /* RestorePaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePaymentCoordinator.swift; sourceTree = "<group>"; };
+		DC5353F32823EFF300D0036C /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5353F62823EFF300D0036C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5353FA2823EFF300D0036C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DC5353FF2823EFF400D0036C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5354022823EFF400D0036C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5354042823EFF400D0036C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5354092823EFF400D0036C /* iosAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC53540D2823EFF400D0036C /* iosAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTests.swift; sourceTree = "<group>"; };
+		DC5354132823EFF400D0036C /* iosAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5354172823EFF400D0036C /* iosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITests.swift; sourceTree = "<group>"; };
+		DC5354192823EFF400D0036C /* iosAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC5354272823F33000D0036C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DC53542B282401EA00D0036C /* RemoveSavedCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveSavedCardViewController.swift; sourceTree = "<group>"; };
+		DC53542F282405CA00D0036C /* CardSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSaleViewController.swift; sourceTree = "<group>"; };
+		DC5354312824091800D0036C /* SavedCardSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardSaleViewController.swift; sourceTree = "<group>"; };
+		DC6A6E282858D0D4000986C5 /* ClarificationFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarificationFieldTableViewCell.swift; sourceTree = "<group>"; };
+		DC6A6E2A2858D10E000986C5 /* ClarificationFieldsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarificationFieldsTableViewController.swift; sourceTree = "<group>"; };
+		DC6A6E2C2858D1C8000986C5 /* ClarificationFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClarificationFields.storyboard; sourceTree = "<group>"; };
+		DC6A6E2E2858D214000986C5 /* ClarificationFieldsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarificationFieldsCoordinator.swift; sourceTree = "<group>"; };
+		DCA01640283F75A700580D22 /* iosApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosApp.entitlements; sourceTree = "<group>"; };
+		DCA01641283F76F600580D22 /* ApplePaySaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaySaleViewController.swift; sourceTree = "<group>"; };
+		DCDDDDFF2858AD2F005140F8 /* PayBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBaseViewController.swift; sourceTree = "<group>"; };
+		DCDDDE022858AF62005140F8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		DCDDDE042858AFA9005140F8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DCDDDE072858B03E005140F8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DCDDDE0A2858B153005140F8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DCDDDE0C2858B1F4005140F8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		DCDDDE102858B4C8005140F8 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		DCDDDE122858B58C005140F8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		DCDDDE142858B738005140F8 /* CardSale.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardSale.storyboard; sourceTree = "<group>"; };
+		DCDDDE162858B7A5005140F8 /* CardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCoordinator.swift; sourceTree = "<group>"; };
+		DCDDDE182858B975005140F8 /* CustomerFieldsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFieldsTableViewController.swift; sourceTree = "<group>"; };
+		DCDDDE1A2858B97E005140F8 /* CustomerFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomerFields.storyboard; sourceTree = "<group>"; };
+		DCDDDE1C2858B9AC005140F8 /* CustomerFieldsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFieldsCoordinator.swift; sourceTree = "<group>"; };
+		DCDDDE1E2858BD1D005140F8 /* CustomerFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFieldTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5353F02823EFF300D0036C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1132AE40D51237AE67C4BED8 /* Pods_iosApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5354062823EFF400D0036C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5354102823EFF400D0036C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1335D7F7CDF7EEE1757B73CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F6C6DF0549B99E54568092F /* Pods-iosApp.debug.xcconfig */,
+				4B14BF70D02FFDB89DD8E279 /* Pods-iosApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4AADEFA217F24FE731C469B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EF51A64CC272AB611962CE9 /* Pods_iosApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC4593B72859DBB30022CA4D /* Acs */ = {
+			isa = PBXGroup;
+			children = (
+				DC4593B82859DCC70022CA4D /* AcsViewController.swift */,
+				DC4593BA2859DDF60022CA4D /* Acs.storyboard */,
+				DC4593BC2859DEC10022CA4D /* AcsCoordinator.swift */,
+			);
+			path = Acs;
+			sourceTree = "<group>";
+		};
+		DC4593C8285B29710022CA4D /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				DC4593C9285B29850022CA4D /* Restore */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		DC4593C9285B29850022CA4D /* Restore */ = {
+			isa = PBXGroup;
+			children = (
+				DC4593CA285B2D800022CA4D /* RestorePaymentViewController.swift */,
+				DC4593CC285B39770022CA4D /* RestorePayment.storyboard */,
+				DC4593CE285B3CC40022CA4D /* RestorePaymentCoordinator.swift */,
+			);
+			path = Restore;
+			sourceTree = "<group>";
+		};
+		DC5353EA2823EFF300D0036C = {
+			isa = PBXGroup;
+			children = (
+				DC5353F52823EFF300D0036C /* iosApp */,
+				DC53540C2823EFF400D0036C /* iosAppTests */,
+				DC5354162823EFF400D0036C /* iosAppUITests */,
+				DC5353F42823EFF300D0036C /* Products */,
+				1335D7F7CDF7EEE1757B73CD /* Pods */,
+				A4AADEFA217F24FE731C469B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5353F42823EFF300D0036C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5353F32823EFF300D0036C /* iosApp.app */,
+				DC5354092823EFF400D0036C /* iosAppTests.xctest */,
+				DC5354132823EFF400D0036C /* iosAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5353F52823EFF300D0036C /* iosApp */ = {
+			isa = PBXGroup;
+			children = (
+				DC9D1DC32858CBE10013DBFC /* Base */,
+				DC9D1DC22858CBD20013DBFC /* Utils */,
+				DC5354262823F26C00D0036C /* ViewControllers */,
+				DCDDDE0C2858B1F4005140F8 /* R.generated.swift */,
+				DCA01640283F75A700580D22 /* iosApp.entitlements */,
+				DC5353F62823EFF300D0036C /* AppDelegate.swift */,
+				DC5353FF2823EFF400D0036C /* Assets.xcassets */,
+				DC5354012823EFF400D0036C /* LaunchScreen.storyboard */,
+				DC5354042823EFF400D0036C /* Info.plist */,
+				DCDDDE042858AFA9005140F8 /* AppCoordinator.swift */,
+			);
+			path = iosApp;
+			sourceTree = "<group>";
+		};
+		DC53540C2823EFF400D0036C /* iosAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC53540D2823EFF400D0036C /* iosAppTests.swift */,
+			);
+			path = iosAppTests;
+			sourceTree = "<group>";
+		};
+		DC5354162823EFF400D0036C /* iosAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5354172823EFF400D0036C /* iosAppUITests.swift */,
+				DC5354192823EFF400D0036C /* iosAppUITestsLaunchTests.swift */,
+			);
+			path = iosAppUITests;
+			sourceTree = "<group>";
+		};
+		DC5354262823F26C00D0036C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDDDDFF2858AD2F005140F8 /* PayBaseViewController.swift */,
+				DC4593B72859DBB30022CA4D /* Acs */,
+				DC9D1DC12858CBB70013DBFC /* Clarification */,
+				DCDDDE062858B02F005140F8 /* Main */,
+				DCDDDE012858AE2B005140F8 /* Customer */,
+				DCA0163F283F751400580D22 /* ApplePay */,
+				DC53542E282405A500D0036C /* Card */,
+				DC4593C8285B29710022CA4D /* Payment */,
+				DC535429282401BE00D0036C /* Account */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC535429282401BE00D0036C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DC53542A282401C600D0036C /* Remove */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		DC53542A282401C600D0036C /* Remove */ = {
+			isa = PBXGroup;
+			children = (
+				DC53542B282401EA00D0036C /* RemoveSavedCardViewController.swift */,
+				DC4593C4285A1B740022CA4D /* RemoveSavedCardViewController.storyboard */,
+				DC4593C6285A1BB00022CA4D /* RemoveSavedCardCoordinator.swift */,
+			);
+			path = Remove;
+			sourceTree = "<group>";
+		};
+		DC53542E282405A500D0036C /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				DC53542F282405CA00D0036C /* CardSaleViewController.swift */,
+				DC5354312824091800D0036C /* SavedCardSaleViewController.swift */,
+				DCDDDE142858B738005140F8 /* CardSale.storyboard */,
+				DCDDDE162858B7A5005140F8 /* CardCoordinator.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		DC9D1DC12858CBB70013DBFC /* Clarification */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A6E282858D0D4000986C5 /* ClarificationFieldTableViewCell.swift */,
+				DC6A6E2A2858D10E000986C5 /* ClarificationFieldsTableViewController.swift */,
+				DC6A6E2C2858D1C8000986C5 /* ClarificationFields.storyboard */,
+				DC6A6E2E2858D214000986C5 /* ClarificationFieldsCoordinator.swift */,
+			);
+			path = Clarification;
+			sourceTree = "<group>";
+		};
+		DC9D1DC22858CBD20013DBFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DC5354272823F33000D0036C /* Utils.swift */,
+				DCDDDE102858B4C8005140F8 /* ViewControllerUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DC9D1DC32858CBE10013DBFC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DCDDDE0A2858B153005140F8 /* BaseNavigationController.swift */,
+				DCDDDE022858AF62005140F8 /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DCA0163F283F751400580D22 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				DCA01641283F76F600580D22 /* ApplePaySaleViewController.swift */,
+				DC4593C0285A0B530022CA4D /* ApplePayCoordinator.swift */,
+				DC4593C2285A0CE60022CA4D /* ApplePay.storyboard */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		DCDDDE012858AE2B005140F8 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				DCDDDE182858B975005140F8 /* CustomerFieldsTableViewController.swift */,
+				DCDDDE1A2858B97E005140F8 /* CustomerFields.storyboard */,
+				DCDDDE1C2858B9AC005140F8 /* CustomerFieldsCoordinator.swift */,
+				DCDDDE1E2858BD1D005140F8 /* CustomerFieldTableViewCell.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		DCDDDE062858B02F005140F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DC5353FA2823EFF300D0036C /* MainViewController.swift */,
+				DCDDDE072858B03E005140F8 /* Main.storyboard */,
+				DCDDDE122858B58C005140F8 /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5353F22823EFF300D0036C /* iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC53541D2823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildPhases = (
+				3A789CC81A0EF525C286BAE0 /* [CP] Check Pods Manifest.lock */,
+				DCDDDE092858B0BC005140F8 /* ShellScript */,
+				DC5353EF2823EFF300D0036C /* Sources */,
+				DC5353F02823EFF300D0036C /* Frameworks */,
+				DC5353F12823EFF300D0036C /* Resources */,
+				56181910CCA0C62D3A921F01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosApp;
+			productName = iosApp;
+			productReference = DC5353F32823EFF300D0036C /* iosApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC5354082823EFF400D0036C /* iosAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5354202823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppTests" */;
+			buildPhases = (
+				DC5354052823EFF400D0036C /* Sources */,
+				DC5354062823EFF400D0036C /* Frameworks */,
+				DC5354072823EFF400D0036C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC53540B2823EFF400D0036C /* PBXTargetDependency */,
+			);
+			name = iosAppTests;
+			productName = iosAppTests;
+			productReference = DC5354092823EFF400D0036C /* iosAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC5354122823EFF400D0036C /* iosAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5354232823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppUITests" */;
+			buildPhases = (
+				DC53540F2823EFF400D0036C /* Sources */,
+				DC5354102823EFF400D0036C /* Frameworks */,
+				DC5354112823EFF400D0036C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5354152823EFF400D0036C /* PBXTargetDependency */,
+			);
+			name = iosAppUITests;
+			productName = iosAppUITests;
+			productReference = DC5354132823EFF400D0036C /* iosAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5353EB2823EFF300D0036C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DC5353F22823EFF300D0036C = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					DC5354082823EFF400D0036C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DC5353F22823EFF300D0036C;
+					};
+					DC5354122823EFF400D0036C = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DC5353F22823EFF300D0036C;
+					};
+				};
+			};
+			buildConfigurationList = DC5353EE2823EFF300D0036C /* Build configuration list for PBXProject "iosApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5353EA2823EFF300D0036C;
+			productRefGroup = DC5353F42823EFF300D0036C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5353F22823EFF300D0036C /* iosApp */,
+				DC5354082823EFF400D0036C /* iosAppTests */,
+				DC5354122823EFF400D0036C /* iosAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5353F12823EFF300D0036C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4593BB2859DDF60022CA4D /* Acs.storyboard in Resources */,
+				DC6A6E2D2858D1C8000986C5 /* ClarificationFields.storyboard in Resources */,
+				DC4593C5285A1B740022CA4D /* RemoveSavedCardViewController.storyboard in Resources */,
+				DC5354032823EFF400D0036C /* LaunchScreen.storyboard in Resources */,
+				DC4593CD285B39770022CA4D /* RestorePayment.storyboard in Resources */,
+				DCDDDE1B2858B97E005140F8 /* CustomerFields.storyboard in Resources */,
+				DC4593C3285A0CE60022CA4D /* ApplePay.storyboard in Resources */,
+				DC5354002823EFF400D0036C /* Assets.xcassets in Resources */,
+				DCDDDE152858B738005140F8 /* CardSale.storyboard in Resources */,
+				DCDDDE082858B03E005140F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5354072823EFF400D0036C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5354112823EFF400D0036C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A789CC81A0EF525C286BAE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iosApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56181910CCA0C62D3A921F01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosApp/Pods-iosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCDDDE092858B0BC005140F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5353EF2823EFF300D0036C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDDDE052858AFA9005140F8 /* AppCoordinator.swift in Sources */,
+				DCDDDE132858B58C005140F8 /* MainCoordinator.swift in Sources */,
+				DCDDDE192858B975005140F8 /* CustomerFieldsTableViewController.swift in Sources */,
+				DC5353FB2823EFF300D0036C /* MainViewController.swift in Sources */,
+				DC5354322824091800D0036C /* SavedCardSaleViewController.swift in Sources */,
+				DC4593C7285A1BB00022CA4D /* RemoveSavedCardCoordinator.swift in Sources */,
+				DCDDDE002858AD2F005140F8 /* PayBaseViewController.swift in Sources */,
+				DC4593B92859DCC70022CA4D /* AcsViewController.swift in Sources */,
+				DCDDDE112858B4C8005140F8 /* ViewControllerUtils.swift in Sources */,
+				DCDDDE172858B7A5005140F8 /* CardCoordinator.swift in Sources */,
+				DC5353F72823EFF300D0036C /* AppDelegate.swift in Sources */,
+				DCDDDE0D2858B1F4005140F8 /* R.generated.swift in Sources */,
+				DC4593CB285B2D800022CA4D /* RestorePaymentViewController.swift in Sources */,
+				DC53542C282401EA00D0036C /* RemoveSavedCardViewController.swift in Sources */,
+				DC535430282405CA00D0036C /* CardSaleViewController.swift in Sources */,
+				DCDDDE0B2858B153005140F8 /* BaseNavigationController.swift in Sources */,
+				DCDDDE1D2858B9AC005140F8 /* CustomerFieldsCoordinator.swift in Sources */,
+				DC5354282823F33000D0036C /* Utils.swift in Sources */,
+				DC6A6E292858D0D4000986C5 /* ClarificationFieldTableViewCell.swift in Sources */,
+				DC4593BD2859DEC10022CA4D /* AcsCoordinator.swift in Sources */,
+				DC6A6E2F2858D214000986C5 /* ClarificationFieldsCoordinator.swift in Sources */,
+				DCA01642283F76F600580D22 /* ApplePaySaleViewController.swift in Sources */,
+				DC4593CF285B3CC40022CA4D /* RestorePaymentCoordinator.swift in Sources */,
+				DC6A6E2B2858D10E000986C5 /* ClarificationFieldsTableViewController.swift in Sources */,
+				DCDDDE1F2858BD1D005140F8 /* CustomerFieldTableViewCell.swift in Sources */,
+				DCDDDE032858AF62005140F8 /* BaseCoordinator.swift in Sources */,
+				DC4593C1285A0B530022CA4D /* ApplePayCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5354052823EFF400D0036C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC53540E2823EFF400D0036C /* iosAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC53540F2823EFF400D0036C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC53541A2823EFF400D0036C /* iosAppUITestsLaunchTests.swift in Sources */,
+				DC5354182823EFF400D0036C /* iosAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC53540B2823EFF400D0036C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5353F22823EFF300D0036C /* iosApp */;
+			targetProxy = DC53540A2823EFF400D0036C /* PBXContainerItemProxy */;
+		};
+		DC5354152823EFF400D0036C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5353F22823EFF300D0036C /* iosApp */;
+			targetProxy = DC5354142823EFF400D0036C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC5354012823EFF400D0036C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5354022823EFF400D0036C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC53541B2823EFF400D0036C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC53541C2823EFF400D0036C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC53541E2823EFF400D0036C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6C6DF0549B99E54568092F /* Pods-iosApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iosApp/iosApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4287668275;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iosApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MSDK Core Test";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.test.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC53541F2823EFF400D0036C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B14BF70D02FFDB89DD8E279 /* Pods-iosApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iosApp/iosApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4287668275;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iosApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "MSDK Core Test";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.test.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC5354212823EFF400D0036C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
+			};
+			name = Debug;
+		};
+		DC5354222823EFF400D0036C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
+			};
+			name = Release;
+		};
+		DC5354242823EFF400D0036C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iosApp;
+			};
+			name = Debug;
+		};
+		DC5354252823EFF400D0036C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iosApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5353EE2823EFF300D0036C /* Build configuration list for PBXProject "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC53541B2823EFF400D0036C /* Debug */,
+				DC53541C2823EFF400D0036C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC53541D2823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC53541E2823EFF400D0036C /* Debug */,
+				DC53541F2823EFF400D0036C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5354202823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5354212823EFF400D0036C /* Debug */,
+				DC5354222823EFF400D0036C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5354232823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5354242823EFF400D0036C /* Debug */,
+				DC5354252823EFF400D0036C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5353EB2823EFF300D0036C /* Project object */;
+}

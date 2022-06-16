@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clarification Fields Table View Controller-->
+        <scene sceneID="kmq-wI-anX">
+            <objects>
+                <tableViewController storyboardIdentifier="ClarificationFieldsTableViewController" id="T5Z-vp-Db7" customClass="ClarificationFieldsTableViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Y9I-0s-70O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="clarificationField" rowHeight="80" id="azE-WK-cJO" customClass="ClarificationFieldTableViewCell" customModule="iosApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="azE-WK-cJO" id="nkp-58-TOj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yl-58-l6F">
+                                            <rect key="frame" x="20" y="11" width="374" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EES-ZH-Fsx">
+                                            <rect key="frame" x="20" y="37" width="374" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EES-ZH-Fsx" firstAttribute="top" secondItem="2Yl-58-l6F" secondAttribute="bottom" constant="8" symbolic="YES" id="8PT-ec-lE0"/>
+                                        <constraint firstItem="EES-ZH-Fsx" firstAttribute="trailing" secondItem="nkp-58-TOj" secondAttribute="trailingMargin" id="I1C-y6-nsf"/>
+                                        <constraint firstItem="2Yl-58-l6F" firstAttribute="leading" secondItem="nkp-58-TOj" secondAttribute="leadingMargin" id="Ton-xP-v8a"/>
+                                        <constraint firstItem="2Yl-58-l6F" firstAttribute="trailing" secondItem="nkp-58-TOj" secondAttribute="trailingMargin" id="aT3-FP-eRi"/>
+                                        <constraint firstItem="EES-ZH-Fsx" firstAttribute="leading" secondItem="nkp-58-TOj" secondAttribute="leadingMargin" id="yTO-aM-2ja"/>
+                                        <constraint firstItem="2Yl-58-l6F" firstAttribute="top" secondItem="nkp-58-TOj" secondAttribute="topMargin" id="yn6-tG-IwQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="2Yl-58-l6F" id="bXW-FY-yXR"/>
+                                    <outlet property="value" destination="EES-ZH-Fsx" id="gTb-Hw-YUu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="T5Z-vp-Db7" id="l3t-Q3-yIE"/>
+                            <outlet property="delegate" destination="T5Z-vp-Db7" id="lOh-nN-Cpk"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9x-oa-db4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
