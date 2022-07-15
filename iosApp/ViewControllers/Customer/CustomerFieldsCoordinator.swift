@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import EcmpMsdkCore
+import MsdkCore
 
 class CustomerFieldsCoordinator: BaseCoordinator {
     
@@ -15,7 +15,9 @@ class CustomerFieldsCoordinator: BaseCoordinator {
     
     override func start() {
         let viewController = R.storyboard.customerFields.customerFieldsTableViewController()!
-        viewController.customerFields = customerFields
+        viewController.customerFields = customerFields.filter({ field in
+            !field.isHidden
+        })
         viewController.coordinator = self
         self.navigationController.viewControllers.append(viewController)
     }

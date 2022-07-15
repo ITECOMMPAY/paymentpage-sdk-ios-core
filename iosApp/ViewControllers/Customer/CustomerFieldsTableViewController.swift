@@ -6,14 +6,14 @@
 //
 
 import UIKit
-import EcmpMsdkCore
+import MsdkCore
 
 class CustomerFieldsTableViewController: UITableViewController {
     
     var customerFields: [CustomerField] = []
     var coordinator: CustomerFieldsCoordinator!
     
-    fileprivate var customerFieldsValues: [String: String] = [:]
+    fileprivate var customerFieldsValues: [FieldType: String] = [:]
     
 
     override func viewDidLoad() {
@@ -60,7 +60,7 @@ class CustomerFieldsTableViewController: UITableViewController {
     
     @objc func applyFields(){
         let fields = customerFieldsValues.map({ (key, value) in
-            CustomerFieldValue.companion.fromNameWithValue(name: key, value: value)
+            CustomerFieldValue.companion.fromTypeWithValue(type: key, value: value)
         })
         
         AppDelegate.msdkSession?.getPayInteractor().sendCustomerFields(fields: fields)
@@ -78,7 +78,7 @@ extension CustomerFieldsTableViewController: UITextFieldDelegate {
         let isValid = field.validator?.isValid(value: text) ?? true
         
         if (isValid) {
-            customerFieldsValues[field.serverName] = text
+            customerFieldsValues[field.type] = text
         } else {
             print("\(String(describing: field.label)) \(field.errorMessage ?? "Invalid value")")
         }

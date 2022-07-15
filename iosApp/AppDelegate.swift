@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import EcmpMsdkCore
+import MsdkCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
-        let msdkConfig = MSDKCoreSessionConfig.companion.prodWithDebug()
+        let msdkConfig = MSDKCoreSessionConfig.companion.debug(apiHost: "sdk.ecommpay.com", wsApiHost: "paymentpage.ecommpay.com")
         //for mocking requests
-        //let msdkConfig = MSDKCoreSessionConfig.companion.mock(mockConfig: MSDKCoreMockConfig.companion.dafault())
+        //let msdkConfig = MSDKCoreSessionConfig.companion.mockFullSuccessFlow()
         AppDelegate.msdkSession = MSDKCoreSession(config: msdkConfig)
         appCoordinator.start()
         

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import EcmpMsdkCore
+import MsdkCore
 
 class MainCoordinator: BaseCoordinator {
     

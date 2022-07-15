@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import EcmpMsdkCore
+import MsdkCore
 import SwiftSpinner
 import Toaster
 
@@ -91,7 +91,7 @@ extension MainViewController: InitDelegate {
         //get string resource manager for server side strings
         let stringResourceManager = AppDelegate.msdkSession?.getStringResourceManager()
         //for example get methods list title string override
-        let title = stringResourceManager?.payment.methodsTitle
+        let title = stringResourceManager?.getStringByKey(key: "title_payment_methods")
         print(title ?? "not found")
         
         //get icons resource manager

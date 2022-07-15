@@ -13,11 +13,11 @@ MavenCentral, you need to do the following:
 1. Open the Podfile file and add the following strings 
     ```
     target 'App' do
-        pod 'EcmpMsdkCore'
+        pod 'MsdkCore'
     end
     ```
 2. Sync cocoopods dependencies `pod install`
 3. Import the library
     ```
-    import EcmpMsdkCore
+    import MsdkCore
     ```

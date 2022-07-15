@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import EcmpMsdkCore
+import MsdkCore
 import SwiftSpinner
 import Toaster
 import PassKit
