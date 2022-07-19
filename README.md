@@ -7,8 +7,8 @@
 
 **Importing libraries via CocoaPods**
 
-The SDK for Android libraries can be imported via MavenCentral. To import the libraries via
-MavenCentral, you need to do the following:
+The SDK for Android libraries can be imported via Cocoapods. To import the libraries via
+Cocoapods, you need to do the following:
 
 1. Open the Podfile file and add the following strings 
     ```
