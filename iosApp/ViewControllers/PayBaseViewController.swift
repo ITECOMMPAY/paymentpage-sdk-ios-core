@@ -32,12 +32,12 @@ extension PayBaseViewController: PayDelegate {
         SwiftSpinner.hide()
     }
     
-    func onCompleteWithDecline(payment: Payment) {
+    func onCompleteWithDecline(paymentMessage: String?, payment: Payment) {
         SwiftSpinner.hide()
         Toast(text: "Payment was declined").show()
     }
     
-    func onCompleteWithFail(status: String?, payment: Payment) {
+    func onCompleteWithFail(isTryAgain: Bool, paymentMessage: String?, payment: Payment) {
         SwiftSpinner.hide()
         Toast(text: "Payment completed with error").show()
     }

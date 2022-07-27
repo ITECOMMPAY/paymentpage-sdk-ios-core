@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let salt = Bundle.main.object(forInfoDictionaryKey: "PROJECT_SALT") as! String
+        let secretKey = Bundle.main.object(forInfoDictionaryKey: "PROJECT_SECRET_KEY") as! String
         let projectId = Bundle.main.object(forInfoDictionaryKey: "PROJECT_ID") as! Int32
         
         let paymentInfo = PaymentInfo.companion.create(projectId: projectId, paymentId: Utils.getRandomPaymentNumber(), paymentAmount: 1031, paymentCurrency: "USD")
@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
         //paymentInfo.token = "TOKEN"
         
         //calculate signature
-        paymentInfo.signature = Utils.signature(paramsToSign: paymentInfo.getParamsForSignature(), secret: salt)
+        paymentInfo.signature = Utils.signature(paramsToSign: paymentInfo.getParamsForSignature(), secret: secretKey)
    
 
         SwiftSpinner.useContainerView(view)

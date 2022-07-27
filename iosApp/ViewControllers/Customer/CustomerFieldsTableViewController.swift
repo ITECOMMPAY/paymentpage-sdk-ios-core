@@ -13,7 +13,7 @@ class CustomerFieldsTableViewController: UITableViewController {
     var customerFields: [CustomerField] = []
     var coordinator: CustomerFieldsCoordinator!
     
-    fileprivate var customerFieldsValues: [FieldType: String] = [:]
+    fileprivate var customerFieldsValues: [String: String] = [:]
     
 
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class CustomerFieldsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customerField", for: indexPath) as! CustomerFieldTableViewCell
         let field = customerFields[indexPath.row]
 
-        cell.title.text = (field.label ?? "--") + (field.isRequired ? " [required]" : "")
+        cell.title.text = field.label + (field.isRequired ? " [required]" : "")
         cell.value.placeholder = field.hint
         cell.value.tag = indexPath.row
         cell.value.delegate = self
@@ -60,7 +60,7 @@ class CustomerFieldsTableViewController: UITableViewController {
     
     @objc func applyFields(){
         let fields = customerFieldsValues.map({ (key, value) in
-            CustomerFieldValue.companion.fromTypeWithValue(type: key, value: value)
+            CustomerFieldValue.companion.fromNameWithValue(name: key, value: value)
         })
         
         AppDelegate.msdkSession?.getPayInteractor().sendCustomerFields(fields: fields)
@@ -78,7 +78,7 @@ extension CustomerFieldsTableViewController: UITextFieldDelegate {
         let isValid = field.validator?.isValid(value: text) ?? true
         
         if (isValid) {
-            customerFieldsValues[field.type] = text
+            customerFieldsValues[field.name] = text
         } else {
             print("\(String(describing: field.label)) \(field.errorMessage ?? "Invalid value")")
         }

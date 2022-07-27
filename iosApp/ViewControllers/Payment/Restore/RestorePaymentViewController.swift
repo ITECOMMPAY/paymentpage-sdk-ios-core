@@ -10,16 +10,13 @@ import MsdkCore
 import SwiftSpinner
 import Toaster
 
-class RestorePaymentViewController: UIViewController {
+class RestorePaymentViewController: PayBaseViewController {
     
     var coordinator: RestorePaymentCoordinator!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppDelegate.msdkSession?.getPaymentRestoreInteractor().execute(
-            request: RestorePaymentRequest(),
-            callback: self
-        )
+        AppDelegate.msdkSession?.getPayInteractor().execute(request: PaymentRestoreRequest(), callback: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,45 +26,15 @@ class RestorePaymentViewController: UIViewController {
         SwiftSpinner.show("Payment processing...")
         
     }
-}
-
-extension RestorePaymentViewController: PaymentRestoreDelegate {
-   
-    //received clarification fields, which need to fill and send
-    func onClarificationFields(clarificationFields: [ClarificationField], payment: Payment) {
-        SwiftSpinner.hide()
+    
+    override func onClarificationFields(clarificationFields: [ClarificationField], payment: Payment) {
+        super.onClarificationFields(clarificationFields: clarificationFields, payment: payment)
         coordinator.showClarificationFields(clarificationFields: clarificationFields)
     }
     
-    func onCompleteWithDecline(payment: Payment) {
-        SwiftSpinner.hide()
-        Toast(text: "Payment was declined").show()
-    }
-    
-    func onCompleteWithFail(status: String?, payment: Payment) {
-        SwiftSpinner.hide()
-        Toast(text: "Payment completed with error").show()
-    }
-    
-    func onCompleteWithSuccess(payment: Payment) {
-        SwiftSpinner.hide()
-        Toast(text: "Payment completed with success").show()
-    }
-    
-    func onError(code: ErrorCode, message: String){
-        SwiftSpinner.hide()
-        Toast(text: "Error").show()
-    }
-    
-    func onStatusChanged(status: PaymentStatus, payment: Payment) {
-        Toast(text: "Payment status is \(status.name)").show()
-    }
-    
-    //received 3ds page and need open it in WebView
-    func onThreeDSecure(acsPage: AcsPage, isCascading: Bool, payment: Payment) {
-        SwiftSpinner.hide()
+    override func onThreeDSecure(acsPage: AcsPage, isCascading: Bool, payment: Payment) {
+        super.onThreeDSecure(acsPage: acsPage, isCascading: isCascading, payment: payment)
+        
         coordinator.showAcs(acsPage: acsPage)
     }
-    
 }
-

@@ -3,7 +3,7 @@
 **How to use example project**
 1. Go to project directory and run `pod install`
 2. Open project via `iosApp.xcworkspace` 
-3. In `Info.plist` file setup `PROJECT_ID` and `PROJECT_SALT`
+3. In `Info.plist` file setup `PROJECT_ID` and `PROJECT_SECRET_KEY`
 
 **Importing libraries via CocoaPods**
 

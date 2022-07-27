@@ -13,7 +13,7 @@ class ClarificationFieldsTableViewController: UITableViewController {
     var clarificationFields: [ClarificationField] = []
     var coordinator: ClarificationFieldsCoordinator!
     
-    fileprivate var clarificationFieldValues: [FieldType: String] = [:]
+    fileprivate var clarificationFieldValues: [String: String] = [:]
     
 
     override func viewDidLoad() {
@@ -59,7 +59,7 @@ class ClarificationFieldsTableViewController: UITableViewController {
     
     @objc func applyFields(){
         let fields = clarificationFieldValues.map({ (key, value) in
-            ClarificationFieldValue.companion.fromTypeWithValue(type: key, value: value)
+            ClarificationFieldValue.companion.fromNameWithValue(name: key, value: value)
         })
         
         AppDelegate.msdkSession?.getPayInteractor().sendClarificationFields(fields: fields)
@@ -77,7 +77,7 @@ extension ClarificationFieldsTableViewController: UITextFieldDelegate {
         let isValid = field.validator?.isValid(value: text) ?? true
         
         if (isValid) {
-            clarificationFieldValues[field.type] = text
+            clarificationFieldValues[field.name] = text
         } else {
             print("\(String(describing: field.defaultLabel)) \(field.defaultErrorMessage ?? "Invalid value")")
         }

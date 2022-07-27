@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>PROJECT_ID</key>
-	<integer>111781</integer>
-	<key>PROJECT_SALT</key>
-	<string>123</string>
+	<integer>123</integer>
+	<key>PROJECT_SECRET_KEY</key>
+	<string>321</string>
 </dict>
 </plist>
