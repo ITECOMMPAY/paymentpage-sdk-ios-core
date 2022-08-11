@@ -48,6 +48,12 @@ class MainCoordinator: BaseCoordinator {
         coordinator.navigationController = navigationController
         self.start(coordinator: coordinator)
     }
+    
+    func showApsPay() {
+        let coordinator = ApsCoordinator()
+        coordinator.navigationController = navigationController
+        self.start(coordinator: coordinator)
+    }
 
 }
 

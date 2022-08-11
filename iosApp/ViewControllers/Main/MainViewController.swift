@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var newCardButton: UIButton!
     @IBOutlet weak var savedCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
+    @IBOutlet weak var apsPayButton: UIButton!
     
     var coordinator: MainCoordinator!
     
@@ -74,6 +75,10 @@ class MainViewController: UIViewController {
         coordinator.showRestorePaymentController()
     }
     
+    @IBAction func onApsPayClick(_ sender: Any) {
+        coordinator.showApsPay()
+    }
+    
 }
 
 extension MainViewController: InitDelegate {
@@ -87,6 +92,7 @@ extension MainViewController: InitDelegate {
     func onInitReceived(paymentMethods: [PaymentMethod], savedAccounts: [SavedAccount]) {
         SwiftSpinner.hide()
         Toast(text: "Init Success").show()
+        
         
         //get string resource manager for server side strings
         let stringResourceManager = AppDelegate.msdkSession?.getStringResourceManager()
@@ -107,6 +113,7 @@ extension MainViewController: InitDelegate {
         newCardButton.isEnabled = true
         savedCardButton.isEnabled = true
         applePayButton.isEnabled = true
+        apsPayButton.isEnabled = true
     }
     
     //received already created payment from init
@@ -119,6 +126,7 @@ extension MainViewController: InitDelegate {
         newCardButton.isEnabled = false
         savedCardButton.isEnabled = false
         applePayButton.isEnabled = false
+        apsPayButton.isEnabled = false
     }    
     
 }

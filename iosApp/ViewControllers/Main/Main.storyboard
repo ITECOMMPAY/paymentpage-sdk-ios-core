@@ -71,6 +71,17 @@
                                     <action selector="onApplePayClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="pEw-Uc-gLn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsN-k3-qDe">
+                                <rect key="frame" x="20" y="464" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IK0-ME-kPh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="APS SALE"/>
+                                <connections>
+                                    <action selector="onApsPayClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="cjt-EX-1dn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qIB-HG-dIr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -84,9 +95,12 @@
                             <constraint firstItem="wXr-SK-cOa" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="TDx-Dv-fpt"/>
                             <constraint firstItem="vdn-QR-lyK" firstAttribute="top" secondItem="wXr-SK-cOa" secondAttribute="bottom" constant="20" id="WXQ-Fc-Fq3"/>
                             <constraint firstItem="B6i-EY-K86" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="XAn-6z-UH7"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="fsN-k3-qDe" secondAttribute="trailing" constant="20" id="ZUU-eS-yvj"/>
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="wXr-SK-cOa" secondAttribute="trailing" constant="20" id="dZE-bL-Xmo"/>
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="rpk-oL-12X" secondAttribute="trailing" constant="20" id="g7K-jY-9al"/>
+                            <constraint firstItem="fsN-k3-qDe" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="jdf-oe-gkk"/>
                             <constraint firstItem="34X-Dx-XkQ" firstAttribute="top" secondItem="rpk-oL-12X" secondAttribute="bottom" constant="20" id="nVv-RW-NAK"/>
+                            <constraint firstItem="fsN-k3-qDe" firstAttribute="top" secondItem="vdn-QR-lyK" secondAttribute="bottom" constant="20" id="p8D-2J-ztf"/>
                             <constraint firstItem="rpk-oL-12X" firstAttribute="top" secondItem="B6i-EY-K86" secondAttribute="bottom" constant="20" id="qs9-OR-yKd"/>
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="B6i-EY-K86" secondAttribute="trailing" constant="20" id="raz-E2-8zI"/>
                             <constraint firstItem="34X-Dx-XkQ" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="rcy-DE-r54"/>
@@ -94,6 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="applePayButton" destination="vdn-QR-lyK" id="abm-0e-bqg"/>
+                        <outlet property="apsPayButton" destination="fsN-k3-qDe" id="Inf-Q2-7oW"/>
                         <outlet property="newCardButton" destination="34X-Dx-XkQ" id="UPO-e0-4EJ"/>
                         <outlet property="paymentReceivedButton" destination="B6i-EY-K86" id="rlR-kU-POu"/>
                         <outlet property="removeSavedCardButton" destination="rpk-oL-12X" id="XEO-Il-7b0"/>

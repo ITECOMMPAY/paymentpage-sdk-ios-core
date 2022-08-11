@@ -89,12 +89,14 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 9 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 10 storyboards.
   struct storyboard {
     /// Storyboard `Acs`.
     static let acs = _R.storyboard.acs()
     /// Storyboard `ApplePay`.
     static let applePay = _R.storyboard.applePay()
+    /// Storyboard `Aps`.
+    static let aps = _R.storyboard.aps()
     /// Storyboard `CardSale`.
     static let cardSale = _R.storyboard.cardSale()
     /// Storyboard `ClarificationFields`.
@@ -121,6 +123,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "ApplePay", bundle: ...)`
     static func applePay(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.applePay)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "Aps", bundle: ...)`
+    static func aps(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.aps)
     }
     #endif
 
@@ -253,6 +262,9 @@ struct _R: Rswift.Validatable {
       try applePay.validate()
       #endif
       #if os(iOS) || os(tvOS)
+      try aps.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try cardSale.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -309,6 +321,26 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.applePay().applePaySaleViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'applePaySaleViewController' could not be loaded from storyboard 'ApplePay' as 'ApplePaySaleViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    struct aps: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let apsViewController = StoryboardViewControllerResource<ApsViewController>(identifier: "ApsViewController")
+      let bundle = R.hostingBundle
+      let name = "Aps"
+
+      func apsViewController(_: Void = ()) -> ApsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: apsViewController)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.aps().apsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'apsViewController' could not be loaded from storyboard 'Aps' as 'ApsViewController'.") }
       }
 
       fileprivate init() {}

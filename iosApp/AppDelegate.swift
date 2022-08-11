@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
-        let msdkConfig = MSDKCoreSessionConfig.companion.debug(apiHost: "sdk.ecommpay.com", wsApiHost: "paymentpage.ecommpay.com")
+        let msdkConfig = MSDKCoreSessionConfig.companion.release(apiHost: "sdk.ecommpay.com", wsApiHost: "paymentpage.ecommpay.com")
         //for mocking requests
         //let msdkConfig = MSDKCoreSessionConfig.companion.mockFullSuccessFlow()
         AppDelegate.msdkSession = MSDKCoreSession(config: msdkConfig)
