@@ -1,3 +1,5 @@
+// swift-tools-version: 5.6
+
 import PackageDescription
 
 let package = Package(
@@ -15,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MsdkCore",
-            url: "https://github.com/ITECOMMPAY/paymentpage-sdk-ios-core/releases/download/0.4.1/MsdkCore.xcframework.zip",
-            checksum: "87b9ba2c0e1e1e73de1d614ae573dd15b2f535474371a096b70b4012f9f73e6a"
+            url: "https://github.com/ITECOMMPAY/paymentpage-sdk-ios-core/releases/download/0.4.3/MsdkCore.xcframework.zip",
+            checksum: "b6f3c2556038d7ea84363afe5302409f94990b570266ad3d04fe748b3eb058d7"
         ),
     ]
 )

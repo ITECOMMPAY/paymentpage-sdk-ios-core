@@ -16,7 +16,7 @@ class RestorePaymentViewController: PayBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppDelegate.msdkSession?.getPayInteractor().execute(request: PaymentRestoreRequest(), callback: self)
+        AppDelegate.msdkSession?.getPayInteractor().execute(request: PaymentRestoreRequest(methodCode: AppDelegate.msdkSession?.getCurrentPayment()?.method ?? ""), callback: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {

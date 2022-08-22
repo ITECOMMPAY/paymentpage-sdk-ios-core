@@ -30,7 +30,7 @@ class ApsViewController: PayBaseViewController {
         view.addSubview(webView)
         
         apsMethod = AppDelegate.msdkSession?.getPaymentMethods()?.first(where: { method in
-            method.type == PaymentMethodType.qiwi
+            method.code == "qiwi"
         })
         
         if let apsMethod = self.apsMethod {
@@ -52,7 +52,7 @@ extension ApsViewController: WKNavigationDelegate {
         
         if (currentUrl != paymentUrl) {
             if let apsMethod = self.apsMethod {
-                AppDelegate.msdkSession?.getPayInteractor().execute(request: ApsSaleRequest(code: apsMethod.type.value), callback: self)
+                AppDelegate.msdkSession?.getPayInteractor().execute(request: ApsSaleRequest(methodCode: apsMethod.code), callback: self)
             }
         }
         
