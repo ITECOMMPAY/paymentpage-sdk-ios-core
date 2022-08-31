@@ -45,8 +45,7 @@ class MainViewController: UIViewController {
         AppDelegate.msdkSession?.getInitInteractor().execute(
             request: InitRequest(
                 paymentInfo: paymentInfo,
-                recurrentInfo: nil,
-                threeDSecureInfo: nil
+                recurrentInfo: nil
             ),
             callback: self
         )
