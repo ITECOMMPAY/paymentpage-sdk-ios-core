@@ -25,13 +25,12 @@
 		DC5353FB2823EFF300D0036C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5353FA2823EFF300D0036C /* MainViewController.swift */; };
 		DC5354002823EFF400D0036C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5353FF2823EFF400D0036C /* Assets.xcassets */; };
 		DC5354032823EFF400D0036C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5354012823EFF400D0036C /* LaunchScreen.storyboard */; };
-		DC53540E2823EFF400D0036C /* iosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53540D2823EFF400D0036C /* iosAppTests.swift */; };
-		DC5354182823EFF400D0036C /* iosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354172823EFF400D0036C /* iosAppUITests.swift */; };
-		DC53541A2823EFF400D0036C /* iosAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354192823EFF400D0036C /* iosAppUITestsLaunchTests.swift */; };
 		DC5354282823F33000D0036C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354272823F33000D0036C /* Utils.swift */; };
 		DC53542C282401EA00D0036C /* RemoveSavedCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53542B282401EA00D0036C /* RemoveSavedCardViewController.swift */; };
 		DC535430282405CA00D0036C /* CardSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53542F282405CA00D0036C /* CardSaleViewController.swift */; };
 		DC5354322824091800D0036C /* SavedCardSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5354312824091800D0036C /* SavedCardSaleViewController.swift */; };
+		DC5F113328F41B1300672521 /* CardPayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F113228F41B1300672521 /* CardPayoutViewController.swift */; };
+		DC5F113528F41B7300672521 /* CardPayoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F113428F41B7300672521 /* CardPayoutCoordinator.swift */; };
 		DC6A6E292858D0D4000986C5 /* ClarificationFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A6E282858D0D4000986C5 /* ClarificationFieldTableViewCell.swift */; };
 		DC6A6E2B2858D10E000986C5 /* ClarificationFieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A6E2A2858D10E000986C5 /* ClarificationFieldsTableViewController.swift */; };
 		DC6A6E2D2858D1C8000986C5 /* ClarificationFields.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6A6E2C2858D1C8000986C5 /* ClarificationFields.storyboard */; };
@@ -52,23 +51,6 @@
 		DCDDDE1D2858B9AC005140F8 /* CustomerFieldsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE1C2858B9AC005140F8 /* CustomerFieldsCoordinator.swift */; };
 		DCDDDE1F2858BD1D005140F8 /* CustomerFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDDE1E2858BD1D005140F8 /* CustomerFieldTableViewCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DC53540A2823EFF400D0036C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC5353EB2823EFF300D0036C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC5353F22823EFF300D0036C;
-			remoteInfo = iosApp;
-		};
-		DC5354142823EFF400D0036C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC5353EB2823EFF300D0036C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC5353F22823EFF300D0036C;
-			remoteInfo = iosApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4B14BF70D02FFDB89DD8E279 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,15 +75,12 @@
 		DC5353FF2823EFF400D0036C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5354022823EFF400D0036C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC5354042823EFF400D0036C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC5354092823EFF400D0036C /* iosAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC53540D2823EFF400D0036C /* iosAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTests.swift; sourceTree = "<group>"; };
-		DC5354132823EFF400D0036C /* iosAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC5354172823EFF400D0036C /* iosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITests.swift; sourceTree = "<group>"; };
-		DC5354192823EFF400D0036C /* iosAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC5354272823F33000D0036C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DC53542B282401EA00D0036C /* RemoveSavedCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveSavedCardViewController.swift; sourceTree = "<group>"; };
 		DC53542F282405CA00D0036C /* CardSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSaleViewController.swift; sourceTree = "<group>"; };
 		DC5354312824091800D0036C /* SavedCardSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardSaleViewController.swift; sourceTree = "<group>"; };
+		DC5F113228F41B1300672521 /* CardPayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayoutViewController.swift; sourceTree = "<group>"; };
+		DC5F113428F41B7300672521 /* CardPayoutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayoutCoordinator.swift; sourceTree = "<group>"; };
 		DC6A6E282858D0D4000986C5 /* ClarificationFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarificationFieldTableViewCell.swift; sourceTree = "<group>"; };
 		DC6A6E2A2858D10E000986C5 /* ClarificationFieldsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarificationFieldsTableViewController.swift; sourceTree = "<group>"; };
 		DC6A6E2C2858D1C8000986C5 /* ClarificationFields.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClarificationFields.storyboard; sourceTree = "<group>"; };
@@ -130,20 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1132AE40D51237AE67C4BED8 /* Pods_iosApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC5354062823EFF400D0036C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC5354102823EFF400D0036C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				DC5353F52823EFF300D0036C /* iosApp */,
-				DC53540C2823EFF400D0036C /* iosAppTests */,
-				DC5354162823EFF400D0036C /* iosAppUITests */,
 				DC5353F42823EFF300D0036C /* Products */,
 				1335D7F7CDF7EEE1757B73CD /* Pods */,
 				A4AADEFA217F24FE731C469B /* Frameworks */,
@@ -211,8 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				DC5353F32823EFF300D0036C /* iosApp.app */,
-				DC5354092823EFF400D0036C /* iosAppTests.xctest */,
-				DC5354132823EFF400D0036C /* iosAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,23 +193,6 @@
 				DCDDDE042858AFA9005140F8 /* AppCoordinator.swift */,
 			);
 			path = iosApp;
-			sourceTree = "<group>";
-		};
-		DC53540C2823EFF400D0036C /* iosAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				DC53540D2823EFF400D0036C /* iosAppTests.swift */,
-			);
-			path = iosAppTests;
-			sourceTree = "<group>";
-		};
-		DC5354162823EFF400D0036C /* iosAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DC5354172823EFF400D0036C /* iosAppUITests.swift */,
-				DC5354192823EFF400D0036C /* iosAppUITestsLaunchTests.swift */,
-			);
-			path = iosAppUITests;
 			sourceTree = "<group>";
 		};
 		DC5354262823F26C00D0036C /* ViewControllers */ = {
@@ -293,6 +237,8 @@
 				DC5354312824091800D0036C /* SavedCardSaleViewController.swift */,
 				DCDDDE142858B738005140F8 /* CardSale.storyboard */,
 				DCDDDE162858B7A5005140F8 /* CardCoordinator.swift */,
+				DC5F113228F41B1300672521 /* CardPayoutViewController.swift */,
+				DC5F113428F41B7300672521 /* CardPayoutCoordinator.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -390,42 +336,6 @@
 			productReference = DC5353F32823EFF300D0036C /* iosApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC5354082823EFF400D0036C /* iosAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC5354202823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppTests" */;
-			buildPhases = (
-				DC5354052823EFF400D0036C /* Sources */,
-				DC5354062823EFF400D0036C /* Frameworks */,
-				DC5354072823EFF400D0036C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC53540B2823EFF400D0036C /* PBXTargetDependency */,
-			);
-			name = iosAppTests;
-			productName = iosAppTests;
-			productReference = DC5354092823EFF400D0036C /* iosAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DC5354122823EFF400D0036C /* iosAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC5354232823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppUITests" */;
-			buildPhases = (
-				DC53540F2823EFF400D0036C /* Sources */,
-				DC5354102823EFF400D0036C /* Frameworks */,
-				DC5354112823EFF400D0036C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC5354152823EFF400D0036C /* PBXTargetDependency */,
-			);
-			name = iosAppUITests;
-			productName = iosAppUITests;
-			productReference = DC5354132823EFF400D0036C /* iosAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -438,14 +348,6 @@
 				TargetAttributes = {
 					DC5353F22823EFF300D0036C = {
 						CreatedOnToolsVersion = 13.3.1;
-					};
-					DC5354082823EFF400D0036C = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = DC5353F22823EFF300D0036C;
-					};
-					DC5354122823EFF400D0036C = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = DC5353F22823EFF300D0036C;
 					};
 				};
 			};
@@ -463,8 +365,6 @@
 			projectRoot = "";
 			targets = (
 				DC5353F22823EFF300D0036C /* iosApp */,
-				DC5354082823EFF400D0036C /* iosAppTests */,
-				DC5354122823EFF400D0036C /* iosAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -485,20 +385,6 @@
 				DCDDDE152858B738005140F8 /* CardSale.storyboard in Resources */,
 				DCDDDE082858B03E005140F8 /* Main.storyboard in Resources */,
 				DC2F44992897B023007E60AF /* Aps.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC5354072823EFF400D0036C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC5354112823EFF400D0036C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +476,7 @@
 				DCDDDE1D2858B9AC005140F8 /* CustomerFieldsCoordinator.swift in Sources */,
 				DC5354282823F33000D0036C /* Utils.swift in Sources */,
 				DC6A6E292858D0D4000986C5 /* ClarificationFieldTableViewCell.swift in Sources */,
+				DC5F113528F41B7300672521 /* CardPayoutCoordinator.swift in Sources */,
 				DC4593BD2859DEC10022CA4D /* AcsCoordinator.swift in Sources */,
 				DC6A6E2F2858D214000986C5 /* ClarificationFieldsCoordinator.swift in Sources */,
 				DCA01642283F76F600580D22 /* ApplePaySaleViewController.swift in Sources */,
@@ -598,41 +485,12 @@
 				DC6A6E2B2858D10E000986C5 /* ClarificationFieldsTableViewController.swift in Sources */,
 				DCDDDE1F2858BD1D005140F8 /* CustomerFieldTableViewCell.swift in Sources */,
 				DCDDDE032858AF62005140F8 /* BaseCoordinator.swift in Sources */,
+				DC5F113328F41B1300672521 /* CardPayoutViewController.swift in Sources */,
 				DC4593C1285A0B530022CA4D /* ApplePayCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC5354052823EFF400D0036C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC53540E2823EFF400D0036C /* iosAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC53540F2823EFF400D0036C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC53541A2823EFF400D0036C /* iosAppUITestsLaunchTests.swift in Sources */,
-				DC5354182823EFF400D0036C /* iosAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DC53540B2823EFF400D0036C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC5353F22823EFF300D0036C /* iosApp */;
-			targetProxy = DC53540A2823EFF400D0036C /* PBXContainerItemProxy */;
-		};
-		DC5354152823EFF400D0036C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC5353F22823EFF300D0036C /* iosApp */;
-			targetProxy = DC5354142823EFF400D0036C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC5354012823EFF400D0036C /* LaunchScreen.storyboard */ = {
@@ -767,9 +625,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iosApp/iosApp.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4287668275;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MSDK Core Test";
@@ -784,7 +642,6 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.test.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -798,9 +655,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iosApp/iosApp.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4287668275;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "MSDK Core Test";
@@ -815,82 +672,9 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.test.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		DC5354212823EFF400D0036C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
-			};
-			name = Debug;
-		};
-		DC5354222823EFF400D0036C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
-			};
-			name = Release;
-		};
-		DC5354242823EFF400D0036C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iosApp;
-			};
-			name = Debug;
-		};
-		DC5354252823EFF400D0036C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ecommpay.core.ios.iosAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iosApp;
 			};
 			name = Release;
 		};
@@ -911,24 +695,6 @@
 			buildConfigurations = (
 				DC53541E2823EFF400D0036C /* Debug */,
 				DC53541F2823EFF400D0036C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC5354202823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC5354212823EFF400D0036C /* Debug */,
-				DC5354222823EFF400D0036C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC5354232823EFF400D0036C /* Build configuration list for PBXNativeTarget "iosAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC5354242823EFF400D0036C /* Debug */,
-				DC5354252823EFF400D0036C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

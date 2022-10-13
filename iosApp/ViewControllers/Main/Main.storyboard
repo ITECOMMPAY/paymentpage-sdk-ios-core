@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6i-EY-K86">
-                                <rect key="frame" x="20" y="64" width="374" height="60"/>
+                                <rect key="frame" x="20" y="68" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bBu-MW-iDg"/>
                                 </constraints>
@@ -28,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-oL-12X">
-                                <rect key="frame" x="20" y="144" width="374" height="60"/>
+                                <rect key="frame" x="20" y="148" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="1q2-3X-rqi"/>
                                 </constraints>
@@ -39,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34X-Dx-XkQ">
-                                <rect key="frame" x="20" y="224" width="374" height="60"/>
+                                <rect key="frame" x="20" y="228" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="YNg-3l-dDA"/>
                                 </constraints>
@@ -50,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXr-SK-cOa">
-                                <rect key="frame" x="20" y="304" width="374" height="60"/>
+                                <rect key="frame" x="20" y="308" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Cux-x1-Fna"/>
                                 </constraints>
@@ -61,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdn-QR-lyK">
-                                <rect key="frame" x="20" y="384" width="374" height="60"/>
+                                <rect key="frame" x="20" y="388" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="GSV-zf-CEI"/>
                                 </constraints>
@@ -72,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsN-k3-qDe">
-                                <rect key="frame" x="20" y="464" width="374" height="60"/>
+                                <rect key="frame" x="20" y="468" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="IK0-ME-kPh"/>
                                 </constraints>
@@ -80,6 +81,17 @@
                                 <buttonConfiguration key="configuration" style="gray" title="APS SALE"/>
                                 <connections>
                                     <action selector="onApsPayClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="cjt-EX-1dn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruG-Oz-Jxy">
+                                <rect key="frame" x="20" y="544" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UZ3-AA-R3I"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="CARD PAYOUT"/>
+                                <connections>
+                                    <action selector="onCardPayoutClick:" destination="AZ3-0F-CAG" eventType="touchUpInside" id="9OF-5G-KVn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,6 +102,7 @@
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="vdn-QR-lyK" secondAttribute="trailing" constant="20" id="0xN-p5-W09"/>
                             <constraint firstItem="wXr-SK-cOa" firstAttribute="top" secondItem="34X-Dx-XkQ" secondAttribute="bottom" constant="20" id="1db-EE-Isq"/>
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="34X-Dx-XkQ" secondAttribute="trailing" constant="20" id="3gM-ko-b93"/>
+                            <constraint firstItem="ruG-Oz-Jxy" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="9eh-By-Lbb"/>
                             <constraint firstItem="vdn-QR-lyK" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="HyA-il-g3J"/>
                             <constraint firstItem="B6i-EY-K86" firstAttribute="top" secondItem="qIB-HG-dIr" secondAttribute="top" constant="20" id="R55-dN-i1Z"/>
                             <constraint firstItem="wXr-SK-cOa" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="TDx-Dv-fpt"/>
@@ -98,6 +111,8 @@
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="fsN-k3-qDe" secondAttribute="trailing" constant="20" id="ZUU-eS-yvj"/>
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="wXr-SK-cOa" secondAttribute="trailing" constant="20" id="dZE-bL-Xmo"/>
                             <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="rpk-oL-12X" secondAttribute="trailing" constant="20" id="g7K-jY-9al"/>
+                            <constraint firstItem="ruG-Oz-Jxy" firstAttribute="top" secondItem="fsN-k3-qDe" secondAttribute="bottom" constant="16" id="gqm-pl-Guq"/>
+                            <constraint firstItem="qIB-HG-dIr" firstAttribute="trailing" secondItem="ruG-Oz-Jxy" secondAttribute="trailing" constant="20" id="i6G-jU-paZ"/>
                             <constraint firstItem="fsN-k3-qDe" firstAttribute="leading" secondItem="qIB-HG-dIr" secondAttribute="leading" constant="20" id="jdf-oe-gkk"/>
                             <constraint firstItem="34X-Dx-XkQ" firstAttribute="top" secondItem="rpk-oL-12X" secondAttribute="bottom" constant="20" id="nVv-RW-NAK"/>
                             <constraint firstItem="fsN-k3-qDe" firstAttribute="top" secondItem="vdn-QR-lyK" secondAttribute="bottom" constant="20" id="p8D-2J-ztf"/>
@@ -109,6 +124,7 @@
                     <connections>
                         <outlet property="applePayButton" destination="vdn-QR-lyK" id="abm-0e-bqg"/>
                         <outlet property="apsPayButton" destination="fsN-k3-qDe" id="Inf-Q2-7oW"/>
+                        <outlet property="cardPayoutButton" destination="ruG-Oz-Jxy" id="BtF-IA-oCU"/>
                         <outlet property="newCardButton" destination="34X-Dx-XkQ" id="UPO-e0-4EJ"/>
                         <outlet property="paymentReceivedButton" destination="B6i-EY-K86" id="rlR-kU-POu"/>
                         <outlet property="removeSavedCardButton" destination="rpk-oL-12X" id="XEO-Il-7b0"/>

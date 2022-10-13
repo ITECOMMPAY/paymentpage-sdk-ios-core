@@ -27,8 +27,7 @@ class CardSaleViewController: PayBaseViewController {
         AppDelegate.msdkSession?.getPayInteractor().execute(request: NewCardSaleRequest(
             cvv: "123",
             pan: "5555555555554444",
-            year: 2025,
-            month: 1,
+            expiryDate: CardDate(month: 1, year: 2025),
             cardHolder: "MSDK CORE",
             saveCard: false
         ), callback: self)

@@ -54,6 +54,12 @@ class MainCoordinator: BaseCoordinator {
         coordinator.navigationController = navigationController
         self.start(coordinator: coordinator)
     }
+    
+    func showCardPayout() {
+        let coordinator = CardPayoutCoordinator()
+        coordinator.navigationController = navigationController
+        self.start(coordinator: coordinator)
+    }
 
 }
 

@@ -350,9 +350,14 @@ struct _R: Rswift.Validatable {
     #if os(iOS) || os(tvOS)
     struct cardSale: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
+      let cardPayoutViewController = StoryboardViewControllerResource<CardPayoutViewController>(identifier: "CardPayoutViewController")
       let cardSaleViewController = StoryboardViewControllerResource<CardSaleViewController>(identifier: "CardSaleViewController")
       let name = "CardSale"
       let savedCardSaleViewController = StoryboardViewControllerResource<SavedCardSaleViewController>(identifier: "SavedCardSaleViewController")
+
+      func cardPayoutViewController(_: Void = ()) -> CardPayoutViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: cardPayoutViewController)
+      }
 
       func cardSaleViewController(_: Void = ()) -> CardSaleViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: cardSaleViewController)
@@ -365,6 +370,7 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.cardSale().cardPayoutViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'cardPayoutViewController' could not be loaded from storyboard 'CardSale' as 'CardPayoutViewController'.") }
         if _R.storyboard.cardSale().cardSaleViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'cardSaleViewController' could not be loaded from storyboard 'CardSale' as 'CardSaleViewController'.") }
         if _R.storyboard.cardSale().savedCardSaleViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'savedCardSaleViewController' could not be loaded from storyboard 'CardSale' as 'SavedCardSaleViewController'.") }
       }

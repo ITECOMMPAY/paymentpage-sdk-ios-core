@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var savedCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
     @IBOutlet weak var apsPayButton: UIButton!
+    @IBOutlet weak var cardPayoutButton: UIButton!
     
     var coordinator: MainCoordinator!
     
@@ -78,6 +79,10 @@ class MainViewController: UIViewController {
         coordinator.showApsPay()
     }
     
+    @IBAction func onCardPayoutClick(_ sender: Any) {
+        coordinator.showCardPayout()
+    }
+    
 }
 
 extension MainViewController: InitDelegate {
@@ -113,6 +118,7 @@ extension MainViewController: InitDelegate {
         savedCardButton.isEnabled = true
         applePayButton.isEnabled = true
         apsPayButton.isEnabled = true
+        cardPayoutButton.isEnabled = true
     }
     
     //received already created payment from init
@@ -126,6 +132,7 @@ extension MainViewController: InitDelegate {
         savedCardButton.isEnabled = false
         applePayButton.isEnabled = false
         apsPayButton.isEnabled = false
+        cardPayoutButton.isEnabled = false
     }    
     
 }
