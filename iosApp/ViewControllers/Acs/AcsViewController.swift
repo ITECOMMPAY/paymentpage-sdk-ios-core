@@ -45,7 +45,9 @@ extension AcsViewController: WKNavigationDelegate {
         if  let termUrl = acsPage.acs?.termUrl {
             if (currentUrl == termUrl) {
                 AppDelegate.msdkSession?.getPayInteractor().threeDSecureHandled()
-                self.navigationController?.popViewController(animated: true)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { //need to wait until web page complete loading
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
         }
     
