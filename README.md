@@ -1,3 +1,6 @@
+[![CocoaPods](https://img.shields.io/cocoapods/v/MsdkCore.svg?style=flat)](https://github.com/ITECOMMPAY/paymentpage-sdk-ios-core)
+[![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/MsdkCore/badge.svg)](https://github.com/ITECOMMPAY/paymentpage-sdk-ios-core)
+
 # Quickstart
 
 **How to use example project**
