@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         let secretKey = Bundle.main.object(forInfoDictionaryKey: "PROJECT_SECRET_KEY") as! String
         let projectId = Bundle.main.object(forInfoDictionaryKey: "PROJECT_ID") as! Int32
         
-        let paymentInfo = PaymentInfo.companion.create(projectId: projectId, paymentId: Utils.getRandomPaymentNumber(), paymentAmount: 1031, paymentCurrency: "USD")
+        let paymentInfo = PaymentInfo.companion.create(projectId: projectId, paymentId: Utils.getRandomPaymentNumber(), paymentAmount: 1, paymentCurrency: "USD")
         //set customer id if needed
         paymentInfo.customerId = "12"
         //set token if need create sale with token

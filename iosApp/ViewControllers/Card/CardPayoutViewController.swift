@@ -50,10 +50,9 @@ class CardPayoutViewController: PayBaseViewController {
         coordinator.showClarificationFields(clarificationFields: clarificationFields)
     }
     
-    override func onThreeDSecure(acsPage: AcsPage, isCascading: Bool, payment: Payment) {
-        super.onThreeDSecure(acsPage: acsPage, isCascading: isCascading, payment: payment)
-        
-        coordinator.showAcs(acsPage: acsPage)
+    override func onThreeDSecure(threeDSecurePage: ThreeDSecurePage, isCascading: Bool, payment: Payment) {
+        super.onThreeDSecure(threeDSecurePage: threeDSecurePage, isCascading: isCascading, payment: payment)
+        coordinator.showThreeDSecurePage(threeDSecurePage: threeDSecurePage)
     }
     
 }

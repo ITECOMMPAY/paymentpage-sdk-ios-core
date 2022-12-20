@@ -32,14 +32,9 @@ extension PayBaseViewController: PayDelegate {
         SwiftSpinner.hide()
     }
     
-    func onCompleteWithDecline(paymentMessage: String?, payment: Payment) {
+    func onCompleteWithDecline(isTryAgain: Bool, paymentMessage: String?, payment: Payment) {
         SwiftSpinner.hide()
         Toast(text: "Payment was declined").show()
-    }
-    
-    func onCompleteWithFail(isTryAgain: Bool, paymentMessage: String?, payment: Payment) {
-        SwiftSpinner.hide()
-        Toast(text: "Payment completed with error").show()
     }
     
     func onCompleteWithSuccess(payment: Payment) {
@@ -60,8 +55,7 @@ extension PayBaseViewController: PayDelegate {
         Toast(text: "Payment status is \(status.name)").show()
     }
     
-    //received 3ds page and need open it in WebView
-    func onThreeDSecure(acsPage: AcsPage, isCascading: Bool, payment: Payment) {
+    func onThreeDSecure(threeDSecurePage: ThreeDSecurePage, isCascading: Bool, payment: Payment) {
         SwiftSpinner.hide()
     }
     

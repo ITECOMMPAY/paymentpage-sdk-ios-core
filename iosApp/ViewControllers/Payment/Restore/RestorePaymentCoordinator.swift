@@ -24,9 +24,9 @@ class RestorePaymentCoordinator: BaseCoordinator {
         self.start(coordinator: coordinator)
     }
     
-    func showAcs(acsPage: AcsPage ) {
-        let coordinator = AcsCoordinator()
-        coordinator.acsPage = acsPage
+    func showThreeDSecurePage(threeDSecurePage: ThreeDSecurePage ) {
+        let coordinator = ThreeDSecureCoordinator()
+        coordinator.threeDSecurePage = threeDSecurePage
         coordinator.navigationController = navigationController
         self.start(coordinator: coordinator)
     }

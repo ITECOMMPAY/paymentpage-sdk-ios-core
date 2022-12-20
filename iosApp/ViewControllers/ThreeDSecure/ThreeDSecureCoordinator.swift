@@ -9,14 +9,14 @@ import Foundation
 import UIKit
 import MsdkCore
 
-class AcsCoordinator: BaseCoordinator {
+class ThreeDSecureCoordinator: BaseCoordinator {
     
-    var acsPage: AcsPage!
+    var threeDSecurePage: ThreeDSecurePage!
     
     override func start() {
-        let viewController = R.storyboard.acs.acsViewController()!
+        let viewController = R.storyboard.threeDSecure.threeDSecureViewController()!
         viewController.coordinator = self
-        viewController.acsPage = acsPage
+        viewController.threeDSecurePage = threeDSecurePage
         self.navigationController.viewControllers.append(viewController)
     }
 

@@ -30,7 +30,7 @@ class ApsViewController: PayBaseViewController {
         view.addSubview(webView)
         
         apsMethod = AppDelegate.msdkSession?.getPaymentMethods()?.first(where: { method in
-            method.code == "qiwi"
+            method.code == "alipay"
         })
         
         if let apsMethod = self.apsMethod {

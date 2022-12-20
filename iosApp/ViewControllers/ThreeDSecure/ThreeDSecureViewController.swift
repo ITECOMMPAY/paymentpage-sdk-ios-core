@@ -11,10 +11,10 @@ import SwiftSpinner
 import Toaster
 import WebKit
 
-class AcsViewController: UIViewController {
+class ThreeDSecureViewController: UIViewController {
     
-    var acsPage: AcsPage!
-    var coordinator: AcsCoordinator!
+    var threeDSecurePage: ThreeDSecurePage!
+    var coordinator: ThreeDSecureCoordinator!
     
     fileprivate var currentUrl: String?
     
@@ -28,28 +28,22 @@ class AcsViewController: UIViewController {
         webView.navigationDelegate = self
         view.addSubview(webView)
         
-        if let html = acsPage.content, let acsUrl = acsPage.acs?.acsUrl {
+        if let html = threeDSecurePage.content, let loadUrl = threeDSecurePage.loadUrl{
             SwiftSpinner.useContainerView(view)
             SwiftSpinner.show("Payment processing...")
-            webView.loadHTMLString(html, baseURL: URL(string: acsUrl))
+            webView.loadHTMLString(html, baseURL: URL(string: loadUrl))
         }
     }
     
 
 }
 
-extension AcsViewController: WKNavigationDelegate {
+extension ThreeDSecureViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         SwiftSpinner.hide()
-        if  let termUrl = acsPage.acs?.termUrl {
-            if (currentUrl == termUrl) {
-                AppDelegate.msdkSession?.getPayInteractor().threeDSecureHandled()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { //need to wait until web page complete loading
-                    self.navigationController?.popViewController(animated: true)
-                }
-            }
-        }
+        guard currentUrl != nil else {return}
+        AppDelegate.msdkSession?.getPayInteractor().threeDSecureRedirectHandle(url: currentUrl!)
     
     }
     

@@ -37,10 +37,19 @@ class SavedCardSaleViewController: PayBaseViewController {
         coordinator.showClarificationFields(clarificationFields: clarificationFields)
     }
     
-    override func onThreeDSecure(acsPage: AcsPage, isCascading: Bool, payment: Payment) {
-        super.onThreeDSecure(acsPage: acsPage, isCascading: isCascading, payment: payment)
-        
-        coordinator.showAcs(acsPage: acsPage)
+    override func onThreeDSecure(threeDSecurePage: ThreeDSecurePage, isCascading: Bool, payment: Payment) {
+        super.onThreeDSecure(threeDSecurePage: threeDSecurePage, isCascading: isCascading, payment: payment)
+        coordinator.showThreeDSecurePage(threeDSecurePage: threeDSecurePage)
+    }
+    
+    override func onCompleteWithSuccess(payment: Payment) {
+        super.onCompleteWithSuccess(payment: payment)
+        coordinator.showFinalPage(payment: payment)
+    }
+    
+    override func onCompleteWithDecline(isTryAgain: Bool, paymentMessage: String?, payment: Payment) {
+        super.onCompleteWithDecline(isTryAgain: isTryAgain, paymentMessage: paymentMessage, payment: payment)
+        coordinator.showFinalPage(payment: payment)
     }
     
 }
