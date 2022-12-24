@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let msdkConfig = MSDKCoreSessionConfig.companion.debug(apiHost: "sdk.ecommpay.com", wsApiHost: "paymentpage.ecommpay.com")
         //for mocking requests
         let msdkMockConfig = MSDKCoreSessionConfig.companion.mockFullSuccessFlow(duration: Duration.companion.seconds(seconds: 2))
-        AppDelegate.msdkSession = MSDKCoreSession(config: msdkConfig, apiVersion: ApiVersion.v1)
+        AppDelegate.msdkSession = MSDKCoreSession(config: msdkConfig)
         appCoordinator.start()
         
         return true
