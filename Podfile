@@ -1,7 +1,7 @@
 target 'iosApp' do
   use_frameworks!
   platform :ios, '13.0'
-  pod 'MsdkCore', '0.7.1'
+  pod 'MsdkCore'
   
   pod 'R.swift'
   pod 'SwiftSpinner'
