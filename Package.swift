@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MsdkCore",
-            url: "https://github.com/ITECOMMPAY/paymentpage-sdk-ios-core/releases/download/0.10.0/MsdkCore.xcframework.zip",
-            checksum: "ff1686aeaffe341da8fd28777422f8642c8b07a04c920d8c75bd89bc9fb1297e"
+            url: "https://github.com/ITECOMMPAY/paymentpage-sdk-ios-core/releases/download/0.10.1/MsdkCore.xcframework.zip",
+            checksum: "3713461a77cb7fe2c5c792198d02916c5c8c5dffe8e9baeef18fb1b06db7f51e"
         ),
     ]
 )
